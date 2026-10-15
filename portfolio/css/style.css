@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(171, 217, 238);
+  font-size: 20px;
+  color: rgba(29, 27, 27, 0.808);
+}
+
+.titulo {
+  color: rgba(29, 27, 27, 0.808);
+  font-size: 38px;
+  text-align: center;
+}
+
+.titulo span {
+  color: rgb(171, 217, 238);
+}
+
+.entre-contato:hover,
+form .btn-enviar input:hover {
+  box-shadow: 0px 0px 8px #ffffff;
+  transform: scale(1.05);
+}
+
+
+header {
+  padding: 40px 4%;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.interface {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.flex>a {
+  background-color: rgb(171, 217, 238);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.logo a{
+  font-size: 35px;
+  color: rgb(171, 217, 238);
+  text-decoration: none;
+}
+
+.button-contato{
+  padding:0.5rem 1rem;
+  background-color: rgb(171, 217, 238);
+  border-radius: 0px 10px 0px 10px;
+  transition: 0.5s;
+}
+
+.button-contato:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(171, 217, 238);
+}
+
+.button-contato a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu>ul {
+  list-style-type: none;
+}
+
+.menu>ul>li {
+  display: inline-block;
+}
+
+.menu>ul>li>a {
+  text-decoration: none;
+  color: rgb(171, 217, 238);
+  margin-left: 2rem;
+}
+
+.menu>ul>li a:hover{
+  text-decoration:underline;
+  color: cadetblue;
+}
+
+
+.topo-do-site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 4%;
+}
+
+.topo-site {
+  padding: 10% 0;
+  max-width: 40%;
+  text-align: justify;
+  margin-left: 10%;
+}
+
+.topo-site p {
+  max-width: 85%;
+  padding: 1rem 0rem;
+}
+
+.ponto {
+  color: #ffffff;
+}
+
+.img-topo-site {
+  width: 100%;
+  max-width: 430px;
+  max-height: 500px;
+  border-radius: 50%;
+  margin-right: 10%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 40px #ffffff;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+/*Animação em CSS, tem que colocar um nome para a animação*/
+@keyframes flutuar {
+
+  /*Como minha imagem vai estar no estado inicial*/
+  0% {
+    transform: translateY(0);
+  }
+
+  /*Quando chegar em 100% eu quero que o top fique com 30px*/
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+.entre-contato {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin: 10px 10px;
+  transition: 0.5s;
+
+}
+
+
+
+.especialidades {
+  padding: 100px 4%;
+  background-color: #ffffff;
+  box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.especialidades .flex {
+  justify-content: space-evenly;
+  gap: 30px;
+  align-items: stretch;
+}
+
+
+.especialidades-box {
+  padding: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  margin-top: 45px;
+  transition: 0.3s;
+  flex: 1 0 300px;
+  border: 1px solid rgba(171, 217, 238, 0.295);
+
+}
+
+.especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgb(171, 217, 238);
+}
+
+.icon {
+  width: 35%;
+  height: 40%;
+  margin-left: 5rem;
+}
+
+.especialidades-box h3 {
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre {
+  padding: 80px 4%;
+}
+
+.img-sobre img {
+  height: 500px;
+  border-radius: 20px;
+}
+
+.txt-sobre {
+  color: rgba(29, 27, 27, 0.808);
+
+}
+
+.txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.txt-sobre h2 span {
+  color: #ffffff;
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0px;
+  text-align: justify;
+}
+
+.btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(171, 217, 238);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 23px;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: 0.5s;
+}
+
+.btn-social button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgb(245, 245, 245);
+
+}
+
+.portfolio {
+  background-color: #81b3ecb0;
+  padding: 40px 4%;
+  box-shadow: 0 0 40px #ffffff;
+}
+
+.portfolio .flex {
+  justify-content: space-around;
+}
+
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 1s;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+  margin-top: 60px;
+}
+
+.img1 {
+  background-image: url('../imagens/projeto1-algoritmos-python.png');
+}
+
+.img2 {
+  background-image: url('../imagens/projeto1-algoritmos-java.png');
+}
+
+.img3 {
+  background-image: url('../imagens/preview-portfolio.png');
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(133, 186, 211, 0.582);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: rgba(29, 27, 27, 0.808);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay p{
+  text-align: center;
+}
+
+.overlay p a{
+  text-decoration: none;
+  color: rgb(16, 91, 126);
+  transition: 0.3s;
+}
+
+.overlay p a:hover{
+  text-decoration: underline;
+
+}
+.formulario {
+  background-color: rgba(76, 116, 134, 0.253);
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: rgba(29, 27, 27, 0.808);
+  font-size: 18px;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+
+form input:hover,
+form textarea:hover{
+  background-color: #ffffff67;
+}
+
+form input::placeholder {
+  color: #ffffff;
+}
+
+.form textarea {
+  resize: none;
+  max-height: 200px;
+  color: rgba(76, 116, 134, 0.253);
+}
+
+form textarea::placeholder {
+  color: #ffffff;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 700;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+
+.rodape{
+  background-color: #ffffff;
+  padding: 5rem;
+  box-shadow: 10px 0 8px rgb(0, 0, 0, 0.35);
+}
+
+.rodape nav{
+  margin-left: 35%;
+}
+
+.rodape hr{
+  color: rgb(171, 217, 238) ;
+}
+
+.rodape p{
+  text-align: center;
+}
+
